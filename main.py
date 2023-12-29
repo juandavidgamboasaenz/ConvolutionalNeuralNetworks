@@ -9,8 +9,15 @@ def print_hi(name):
     print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
 
 
+def calculate_output(weight, input, bias):
+    output = (weight * input) + bias
+    print(output)
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
+
+print("Salida calculada: ",calculate_output(1,1,0))
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
