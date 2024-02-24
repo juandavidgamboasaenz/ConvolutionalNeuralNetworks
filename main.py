@@ -1,5 +1,6 @@
 # This is a sample Python script.
 import single_neuron
+import matrixes.matrix_gs as matrix_gs
 
 
 # Press ⌃R to execute it or replace it with your code.
@@ -14,9 +15,14 @@ def execute():
         [-0.26, -0.27, 0.17, 0.87],
     ]
     bias = [2, 3.0, 0.5]
+
     # Yse
-    single_neuron.n_neuron_input_layer_m_multiple_output(weights, inputs, bias)
-    output = single_neuron.calculate_n_layers_neuron(inputs, weights, bias)
+    # single_neuron.n_neuron_input_layer_m_multiple_output(weights, inputs, bias)
+    # output = single_neuron.calculate_n_layers_neuron(inputs, weights, bias)
+
+    vector = [[1, 2], [3, 4]]
+    output = matrix_gs.create_array_matrix(vector)
+
     print(output)
 
     # Press the green button in the gutter to run the script.
